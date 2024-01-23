@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <title>KARBON CARD</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form" action="/success" method="post" enctype="multipart/form-data">
+            <h1>Please Enter the files</h1>
+            <div class="form-control">
+                <label for="file">File Upload</label>
+                <input type="file"  name="file" multiple>
+            </div>
+            <div class="submit-btn">
+                <input type="submit"  value="Upload">
+            </div>
+        </form> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

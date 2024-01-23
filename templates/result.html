@@ -10,16 +10,10 @@
 <body>
    
     <textarea name="" id="" cols="100" rows="10"> 
-        {% for item in ds %}
-            {{ item }}
+        {% for key, value in ds.items() %}
+            {{ key }}: {{ value }}
         {% endfor %}
     </textarea>
-        <ul>
-            {% for item in ds %}
-                <li>{{ item }}</li>
-            {% endfor %}
-
-        </ul>
     <script src="script.js"></script>
 </body>
 </html>
